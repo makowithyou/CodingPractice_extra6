@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: unset;
+}
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 15px 15px;
+    box-sizing: content-box;
+}
+img {
+    width: 100%;
+    display: block
+}
+img#MainImg {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+
+/* 広い画面向けの CSS */
+@media (min-width: 600px) {
+    div.container {
+        padding: 30px 20px;
+    }
+}
