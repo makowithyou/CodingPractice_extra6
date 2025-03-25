@@ -17,6 +17,13 @@ img {
 img#MainImg {
     grid-column-start: 1;
     grid-column-end: 6;
+    transition: 1s;
+}
+img#MainImg.fadeout {
+    opacity: 0;
+}
+img#MainImg.fadein {
+    opacity: 1;
 }
 .images {
     display: grid;
