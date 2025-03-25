@@ -31,7 +31,10 @@ img#MainImg.fadeout {
 
 /* 広い画面向けの CSS */
 @media (min-width: 600px) {
-    div.container {
+    .container {
         padding: 30px 20px;
+    }
+    .images {
+        gap: 20px;
     }
 }
