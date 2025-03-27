@@ -16,15 +16,15 @@ addEventListener(
 
 
 // jquery
-// $(".thumbnail").hover(
+// $(".thumbnail").mouseover(
 //     function() {
 //         const src = $(this).attr('src');
 //         const alt = $(this).attr('alt');
-//         $("#MainImg").fadeTo(250, 0).then(function(){
+//         $("#MainImg").addClass("fadeout");
+//         setTimeout(() => {
 //             $("#MainImg").attr("src", src);
 //             $("#MainImg").attr("alt", alt);
-//         }).then(function(){
-//             $("#MainImg").fadeTo(250, 1);
-//         })
+//             $("#MainImg").removeClass("fadeout");
+//         }, 500);
 //     }
 // );
