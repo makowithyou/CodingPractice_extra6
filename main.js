@@ -4,22 +4,15 @@ addEventListener(
         if (e.target.className == "thumbnail") {
             const src = e.target.getAttribute("src");
             const alt = e.target.getAttribute("alt");
-            imgFadeChange(MainImg, src, alt);
+            MainImg.classList.toggle("fadeout");
+            setTimeout(() => {
+                MainImg.setAttribute("src", src);
+                MainImg.setAttribute("alt", alt);
+                MainImg.classList.toggle("fadeout");
+            }, 500);
         }
     }
 )
-async function imgFadeChange(img, src, alt) {
-    img.classList.toggle("fadeout");
-    await timeout(500);
-    img.setAttribute("src", src);
-    img.setAttribute("alt", alt);
-    img.classList.toggle("fadeout");
-}
-function timeout(ms) {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(), ms);
-  });
-}
 
 
 // jquery
