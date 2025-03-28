@@ -1,3 +1,4 @@
+// javaScript 動作ok
 const MainImg = document.getElementById("MainImg");
 addEventListener(
     "mouseover", (e) => {
@@ -17,7 +18,23 @@ addEventListener(
 )
 
 
-// jquery
+// jquery 動作ok
+// $(".thumbnail").mouseover(function() {
+//     const src = $(this).attr('src');
+//     const alt = $(this).attr('alt');
+//     if ($("#MainImg").attr("src") != src){
+//         $("#MainImg").toggleClass("fadeout");
+//         setTimeout(() => {
+//             $("#MainImg").attr("src", src);
+//             $("#MainImg").attr("alt", alt);
+//             $("#MainImg").toggleClass("fadeout");
+//         }, 500);
+//     }
+// });
+
+
+// jquery fadeOut/fadeInを使った書き方
+// ※フェードアウトが完了する前に画像が書き換わってしまう
 // $(".thumbnail").mouseover(function() {
 //     const src = $(this).attr('src');
 //     const alt = $(this).attr('alt');
